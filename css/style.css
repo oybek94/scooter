@@ -224,7 +224,52 @@ html {
    font-family: var(--secondary-font);
 }
 
+/* FEATURES */
 
+.features {
+   background-image: url("/img/moon.png"), url("/img/long-arrow.svg");
+   background-repeat: no-repeat;
+   background-position: right, right 80px top 290px ;
+}
+
+.features-list {
+   padding: 0;
+   list-style: none;
+}
+
+.features-item__content {
+   width: 445px;
+   margin-right: 20px;
+}
+
+.features-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.features-item__title {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -2.14286px;
+   color: var(--header-text-color);
+}
+
+.features-item__text {
+   margin-top: 0;
+   margin-bottom: 40px;
+   font-family: var(--secondary-font);
+}
+
+.features-item__photo {
+   background: url("/img/girl-with-tel.png") no-repeat right center;
+   width: 445px;
+   height: 445px;
+   z-index: -1;
+}
 
 
 
