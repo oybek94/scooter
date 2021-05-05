@@ -23,10 +23,9 @@ html {
  body {
    margin: 0;
    padding: 0;
-   font-family: var(--text-color);
-   font-weight: 400;
+   font-family: var(--main-font);
    font-size: 15px;
-   line-height: calc(25/15*100%);
+   line-height: 167%;
    color: var(--text-color);
  }
 
@@ -63,7 +62,6 @@ html {
 
 .nav-link {
    margin-right: 32px;
-   font-family: var(--main-font);
    font-weight: 700;
    color: var(--text-color);
    text-decoration: none;
@@ -82,14 +80,68 @@ html {
    background: #FCB72B;
    color: var(--white-color);
    text-decoration: none;
-   font-family: var(--main-font);
    border: 3px solid var(--accent-color);
    transition: background-color .3s ease;
 }
 
 .primary-btn:hover {
-   background-color: var(--white-color);
+   background-color: transparent;
    color: var(--accent-color);
 }
 
 /* HERO SECTION */
+
+.hero {
+   padding: 152px 0;
+   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-image.png");
+   background-repeat: no-repeat;
+   background-size: auto, cover, cover;
+   background-position: top calc(50% + 150px) right, 0 0, 0 0;
+}
+
+.main-title {
+   margin-top: 0;
+   margin-bottom: 40px;
+   font-size: 56px;
+   line-height: 56px;
+   letter-spacing: -2.5px;
+   color: var(--white-color);
+}
+
+.hero-text {
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 40px;
+   margin-left: 96px;
+   width: 405px;
+   color: var(--white-color);
+   font-family: var(--secondary-font);
+}
+
+.hero-text::before {
+   position: absolute;
+   height: 15px;
+   width: 100%;
+   background-color: var(--accent-color);
+   top: 43px;
+   left: -460px;
+
+   content: "";
+}
+
+.hero-text::after {
+   position: absolute;
+   background-image: url("/img/top-arrow-line.svg");
+   background-repeat: no-repeat;
+   width: 452px;
+   height: 150px;
+   top: 43px;
+   left: 450px;
+
+   content: "";
+}
+
+.hero-btn {
+   margin-left: 96px;
+}
+
