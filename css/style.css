@@ -145,3 +145,86 @@ html {
    margin-left: 96px;
 }
 
+
+/* MAIN */
+
+.main {
+   padding: 160px 0 200px 0;
+}
+
+/* SERVISE SECTION */
+
+.service {
+   margin-bottom: 200px;
+}
+
+.service-list {
+   display: flex;
+   margin-right: 30px;
+   padding: 0;
+   list-style: none;
+}
+
+.app {
+   background: url("/img/tel.png") no-repeat center center;
+}
+
+.pick {
+   background: url("/img/bike.png") no-repeat center center;
+}
+
+.enjoy {
+   background: url("/img/bike-with-people.png") no-repeat center center;
+}
+
+.service-icon {
+   position: relative;
+   width: 96px;
+   height: 96px;
+   margin-bottom: 40px;
+   border-radius: 50%;
+   background-color: var(--accent-color);
+}
+
+.service-icon::before {
+   position: absolute;
+   width: 400%;
+   height: 15px;
+   top: 40px;
+   left: -360px;
+   background-color: #E5ECF4;
+   z-index: -1;
+
+   content: "";
+}
+
+.service-icon::after:not(:last-child) {
+   position: absolute;
+   width: 400%;
+   height: 15px;
+   top: 40px;
+   left: 60px;
+   background-color: #E5ECF4;
+   z-index: -1;
+
+   content: "";
+}
+
+.service-title {
+   margin-top: 0;
+   margin-bottom: 27px;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--header-text-color);
+}
+
+.service-text {
+   margin: 0;
+   font-family: var(--secondary-font);
+}
+
+
+
+
+
