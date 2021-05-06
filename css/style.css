@@ -23,6 +23,7 @@ html {
  body {
    margin: 0;
    padding: 0;
+   max-width: 100%;
    font-family: var(--main-font);
    font-size: 15px;
    line-height: 167%;
@@ -226,10 +227,10 @@ html {
 
 /* FEATURES */
 
-.features {
-   background-image: url("/img/moon.png"), url("/img/long-arrow.svg");
-   background-repeat: no-repeat;
-   background-position: right, right 80px top 290px ;
+.features__container {
+   min-width: 1400px;
+   margin-left: calc(50% - 700px);
+   padding-left: 25px;
 }
 
 .features-list {
@@ -237,16 +238,15 @@ html {
    list-style: none;
 }
 
-.features-item__content {
-   width: 445px;
-   margin-right: 20px;
-}
-
 .features-item {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 100%;
+}
+
+.features-item__content {
+   width: 50%;
+   margin-right: 20px;
 }
 
 .features-item__title {
@@ -265,10 +265,10 @@ html {
 }
 
 .features-item__photo {
+   position: relative;
    background: url("/img/girl-with-tel.png") no-repeat right center;
-   width: 445px;
-   height: 445px;
-   z-index: -1;
+   width: 100%;
+   height: 450px;
 }
 
 
