@@ -31,7 +31,7 @@ html {
  }
 
 .container {
-   max-width: 1400px;
+   max-width: 1200px;
    margin: 0 auto;
    padding: 0 25px;
 }
@@ -235,12 +235,12 @@ html {
                      url("/img/round.png"), 
                      url("/img/round.png");
    background-repeat: no-repeat;
-   background-position: left calc(50% + 455px) top calc(50% + -463px), 
-                        right calc(50% + 850px) top calc(50% + -135px),
-                        left calc(50% + 200px) top calc(50% + 300px),
-                        left calc(50% + 940px) top calc(50% + -612px), 
-                        right calc(50% + 940px) top calc(50% + -2px),
-                        left calc(50% + 940px) top calc(50% + 607px);
+   background-position: left calc(50% + 355px) top calc(50% + -463px), 
+                        right calc(50% + 750px) top calc(50% + -135px),
+                        left calc(50% + 750px) top calc(50% + 550px),
+                        left calc(50% + 840px) top calc(50% + -612px), 
+                        right calc(50% + 840px) top calc(50% + -2px),
+                        left calc(50% + 840px) top calc(50% + 607px);
 }
 
 .features-list {
@@ -340,7 +340,6 @@ html {
    display: inline-block;
    margin-left: 24px;
 }
-
-.social-link:hover {
+.social-svg:hover path {
    fill: var(--white-color);
 }
