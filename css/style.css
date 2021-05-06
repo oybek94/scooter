@@ -228,7 +228,12 @@ html {
 /* FEATURES */
 
 .features {
-   background-image: url("/img/arrow-right.png"), url("/img/arrow-left.png"), url("/img/arrow-right.png"), url("/img/round.png"), url("/img/round.png"), url("/img/round.png");
+   background-image: url("/img/arrow-right.png"), 
+                     url("/img/arrow-left.png"), 
+                     url("/img/arrow-right.png"), 
+                     url("/img/round.png"), 
+                     url("/img/round.png"), 
+                     url("/img/round.png");
    background-repeat: no-repeat;
    background-position: left calc(50% + 455px) top calc(50% + -463px), 
                         right calc(50% + 850px) top calc(50% + -135px),
@@ -292,7 +297,50 @@ html {
 .features-item__photo__wallet {
    background-image: url("/img/wallet.png");
    border-radius: 50%;
+   height: 445px;
+   width: 445px;
 }
 
+/* FOOTER */
 
+/* APPSTORE */
 
+.appstore {
+   padding: 102px 0;
+   background-color: var(--header-text-color);
+   background-image: url("/img/footer-bg.png");
+   background-position: bottom right;
+   background-repeat: no-repeat;
+}
+
+.appstore__title {
+   max-width: 420px;
+   margin-right: auto;
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -2.14286px;
+   color: var(--white-color);
+}
+
+.appstore-link {
+   display: inline-block;
+}
+
+.appstore-link:not(:last-child) {
+   margin-right: 18px;
+}
+
+/* FOOTER END */
+
+.end {
+   background-color: #333A44;
+}
+
+.social-link {
+   display: inline-block;
+   margin-left: 24px;
+}
+
+.social-link:hover {
+   fill: var(--white-color);
+}
