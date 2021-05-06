@@ -227,10 +227,15 @@ html {
 
 /* FEATURES */
 
-.features__container {
-   min-width: 1400px;
-   margin-left: calc(50% - 700px);
-   padding-left: 25px;
+.features {
+   background-image: url("/img/arrow-right.png"), url("/img/arrow-left.png"), url("/img/arrow-right.png"), url("/img/round.png"), url("/img/round.png"), url("/img/round.png");
+   background-repeat: no-repeat;
+   background-position: left calc(50% + 455px) top calc(50% + -463px), 
+                        right calc(50% + 850px) top calc(50% + -135px),
+                        left calc(50% + 200px) top calc(50% + 300px),
+                        left calc(50% + 940px) top calc(50% + -612px), 
+                        right calc(50% + 940px) top calc(50% + -2px),
+                        left calc(50% + 940px) top calc(50% + 607px);
 }
 
 .features-list {
@@ -242,10 +247,15 @@ html {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 160px;
+}
+
+.features-item:nth-child(even) {
+   flex-direction: row-reverse;
 }
 
 .features-item__content {
-   width: 50%;
+   max-width: 40%;
    margin-right: 20px;
 }
 
@@ -265,10 +275,23 @@ html {
 }
 
 .features-item__photo {
-   position: relative;
-   background: url("/img/girl-with-tel.png") no-repeat right center;
-   width: 100%;
+   width: 450px;
    height: 450px;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
+
+.features-item__photo__girl {
+   background-image: url("/img/girl-with-tel.png");
+}
+
+.features-item__photo__city {
+   background-image: url("/img/city.png");
+}
+
+.features-item__photo__wallet {
+   background-image: url("/img/wallet.png");
+   border-radius: 50%;
 }
 
 
