@@ -340,6 +340,11 @@ html {
    display: inline-block;
    margin-left: 24px;
 }
-.social-svg:hover path {
+
+path {
+   transition: fill .3s ease;
+}
+
+.social-link:hover path {
    fill: var(--white-color);
 }
