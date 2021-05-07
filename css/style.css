@@ -568,3 +568,53 @@ input:checked .accordion-title::after {
    padding-top: 24px;
    height: auto;
 }
+
+.features-careers {
+   background-image: url("/img/arrow-right.png"), 
+                     url("/img/round.png"); 
+   background-repeat: no-repeat;
+   background-position: left calc(50% + 355px) top calc(50% + 45px), 
+                        left calc(50% + 840px) top calc(50% + -92px);
+}
+
+.features-item__photo__boy-tablet {
+   background-image: url("/img/boy-tablet.png");
+   width: 445px;
+   height: 445px;
+   border-radius: 50%;
+}
+
+/* APPLY */
+
+.apply-list {
+   list-style: none;
+   padding: 0;
+}
+
+.apply-item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 32px 64px 35px 40px;
+   background-color: #F2F5F9;
+}
+
+.apply-item:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.apply-position {
+   margin-top: 0;
+   margin-bottom: 8px;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--header-text-color);
+}
+
+.apply-country {
+   margin: 0;
+   font-family: var(--secondary-font);
+   color: var(--header-text-color);
+}
+
