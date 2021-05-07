@@ -83,6 +83,7 @@ html {
    text-decoration: none;
    border: 3px solid var(--accent-color);
    transition: background-color .3s ease;
+   white-space: nowrap;
 }
 
 .primary-btn:hover {
@@ -135,7 +136,7 @@ html {
 
 .hero-text::after {
    position: absolute;
-   background-image: url("/img/top-arrow-line.svg");
+   background-image: url("/img/top-arrow-line.png");
    background-repeat: no-repeat;
    width: 452px;
    height: 150px;
@@ -153,7 +154,7 @@ html {
 /* MAIN */
 
 .main {
-   padding: 160px 0 200px 0;
+   padding: 160px 0 120px 0;
 }
 
 /* SERVISE SECTION */
@@ -632,3 +633,33 @@ input:checked .accordion-title::after {
 }
 
 
+/* LOCATION PAGE */
+
+.location-photo {
+   margin-bottom: 120px;
+   width: 100%;
+   height: auto;
+}
+
+.location-content {
+   display: flex;
+   align-items: center;
+}
+
+.location-title {
+   width: 305px;  
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: 76px;
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -2.14286px;
+   color: var(--header-text-color);
+}
+
+.location-text {
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: auto;
+   width: 445px;
+}
