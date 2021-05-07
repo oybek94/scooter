@@ -100,13 +100,16 @@ html {
    background-position: top calc(50% + 150px) right, 0 0, 0 0;
 }
 
-.main-title {
-   margin-top: 0;
-   margin-bottom: 40px;
+.title {
+   margin: 0;
    font-size: 56px;
    line-height: 56px;
    letter-spacing: -2.5px;
    color: var(--white-color);
+}
+
+.main-title {
+   margin-bottom: 40px;
 }
 
 .hero-text {
@@ -348,3 +351,134 @@ path {
 .social-link:hover path {
    fill: var(--white-color);
 }
+
+/* ABOUT PAGE */
+
+/* HERO-ABOUT */
+
+.hero-about {
+   padding: 72px 0;
+   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-about-hero.png");
+   background-repeat: no-repeat;
+   background-size: auto, cover, cover;
+   background-position: top calc(50% + 150px) right, 0 0, 0 0;
+}
+
+/* FEATURES ABOUT */
+
+.features-about {
+   background-image: url("/img/arrow-right-top.png"), 
+   url("/img/arrow-left.png"), 
+   url("/img/round.png"), 
+   url("/img/round.png");
+background-repeat: no-repeat;
+background-position: left calc(50% + 355px) top calc(50% + -200px), 
+      right calc(50% + 760px) top calc(50% + 157px),
+      left calc(50% + 840px) top calc(50% + -306px), 
+      right calc(50% + 840px) top calc(50% + 300px);
+}
+
+.features-item__photo__girl-tel {
+   background-image: url("/img/girl-tel.png");
+   border-radius: 50%;
+   width: 445px;
+   height: 445px;
+}
+
+.features-item__photo__tramway {
+   background-image: url("/img/trolebus.png");
+   background-position: center center;
+}
+
+/* OUR VALUES */
+
+.value {
+   margin-bottom: 120px;
+}
+
+.value__content {
+   justify-content: space-between;
+}
+
+.section-title {
+   margin-bottom: 48px;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -2.14286px;
+   color: var(--text-color);
+}
+
+.value-list {
+   display: flex;
+   justify-content: space-between;
+   padding: 0;
+   list-style: none;
+}
+
+.value-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 350px;
+   text-align: center;
+   counter-increment: counter;
+}
+
+.value-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.value-item__photo {
+   position: relative;
+   width: 240px;
+   height: 240px;
+   margin-top: 55px;
+   margin-bottom: 87px;
+   border-radius: 50%;
+}
+
+.value-item__photo::after {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 96px;
+   height: 96px;
+   top: 200px;
+   left: 70px;
+   background-color: var(--accent-color);
+   border-radius: 50%;
+
+   content: "0" counter(counter);
+}
+
+.value-item__photo-tel {
+   background-image: url("/img/value-tel.png");
+}
+
+.value-item__photo-bike {
+   background-image: url("/img/value-bike.png");
+}
+
+.value-item__photo-people {
+   background-image: url("/img/value-people.png");
+}
+
+.value-item__title {
+   margin-top: 0;
+   margin-bottom: 27px;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   letter-spacing: -1.07143px;
+   color: var(--header-text-color);
+}
+
+.value-item__text {
+   font-family: var(--secondary-font);
+   margin: 0;
+}
+
