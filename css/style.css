@@ -401,13 +401,17 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
 }
 
 .section-title {
-   margin-bottom: 48px;
+   margin: 0;
    font-weight: bold;
    font-size: 48px;
    line-height: 48px;
    text-align: center;
    letter-spacing: -2.14286px;
-   color: var(--text-color);
+   color: var(--header-text-color);
+}
+
+.value__title {
+   margin-bottom: 48px;
 }
 
 .value-list {
@@ -482,3 +486,85 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    margin: 0;
 }
 
+/* FAQs */
+
+.faq-how {
+   display: flex;  
+}
+
+.faq-how:not(:last-child) {
+   margin-bottom: 64px;
+}
+
+.faq-title {
+   margin-bottom: 64px;
+}
+
+.faq-how__title {
+   flex: 0 0 33%;
+   margin: 0;
+   margin-right: 30px;
+   font-size: 40px;
+   line-height: 48px;
+   letter-spacing: -1.78571px;
+   color: var(--header-text-color);
+}
+
+.accordions {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+
+.accordion {
+   position: relative;
+   background-color: #F2F5F9;
+   padding: 32px 40px;
+   margin-bottom: 16px;
+}
+
+.radio-btn {
+   display: none;
+}
+
+.accordion-title {
+   position: relative;
+   display: block;
+   cursor: pointer;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--header-text-color);
+}
+
+.accordion-title::after {
+   position: absolute;
+   width: 18px;
+   height: 8px;
+   right: 0;
+   background-image: url("/img/arrow-top.png");
+   background-position: center center;
+   content: "";
+}
+
+input:checked .accordion-title::after {
+   background-image: url("/img/arrow-bottom.png");
+   width: 16px;
+   height: 8px;
+}
+
+.accordion-text {
+   position: relative;
+   overflow: hidden;
+   height: 0;
+   margin: 0;
+   transition: padding .3s ease;
+   font-family: var(--secondary-font);
+   color: var(--header-text-color);
+}
+
+.radio-btn:checked ~ .accordion-text {
+   padding-top: 24px;
+   height: auto;
+}
