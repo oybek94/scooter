@@ -356,12 +356,16 @@ path {
 
 /* HERO-ABOUT */
 
-.hero-about {
+.hero-mini {
    padding: 72px 0;
-   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-about-hero.png");
    background-repeat: no-repeat;
    background-size: auto, cover, cover;
-   background-position: top calc(50% + 150px) right, 0 0, 0 0;
+   background-position: center right;
+
+}
+
+.hero-mini-about {
+   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-about-hero.png");
 }
 
 /* FEATURES ABOUT */
@@ -452,6 +456,11 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    height: 96px;
    top: 200px;
    left: 70px;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   letter-spacing: -1.07143px;
+   color: var(--header-text-color);
    background-color: var(--accent-color);
    border-radius: 50%;
 
@@ -573,8 +582,8 @@ input:checked .accordion-title::after {
    background-image: url("/img/arrow-right.png"), 
                      url("/img/round.png"); 
    background-repeat: no-repeat;
-   background-position: left calc(50% + 355px) top calc(50% + 45px), 
-                        left calc(50% + 840px) top calc(50% + -92px);
+   background-position: left calc(50% + 355px) top calc(50% + 140px), 
+                        left calc(50% + 840px) top calc(50% + 1px);
 }
 
 .features-item__photo__boy-tablet {
@@ -585,6 +594,10 @@ input:checked .accordion-title::after {
 }
 
 /* APPLY */
+
+.hero-mini__career {
+   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/careers-bg.png");
+}
 
 .apply-list {
    list-style: none;
@@ -617,4 +630,5 @@ input:checked .accordion-title::after {
    font-family: var(--secondary-font);
    color: var(--header-text-color);
 }
+
 
