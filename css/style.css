@@ -170,6 +170,10 @@ html {
    list-style: none;
 }
 
+.service-item:not(:last-child) {
+   margin-right: 30px;
+}
+
 .app {
    background: url("/img/tel.png") no-repeat center center;
 }
