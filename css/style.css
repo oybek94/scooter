@@ -109,10 +109,10 @@ html {
 
 .hero {
    padding: 152px 0;
-   background-image: url(/img/rounds.png), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-image.png");
+   background-image: url("/img/top-arrow-line.png"), url("/img/rounds.png"), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-image.png");
    background-repeat: no-repeat;
-   background-size: auto, cover, cover;
-   background-position: top calc(50% + 150px) right, 0 0, 0 0;
+   background-size: auto, auto, cover, cover;
+   background-position: top calc(50% + 112px) left calc(50% + 200px), top calc(50% + 150px) right, 0 0, 0 0;
 }
 
 .title {
@@ -144,18 +144,6 @@ html {
    background-color: var(--accent-color);
    top: 43px;
    left: -460px;
-
-   content: "";
-}
-
-.hero-text::after {
-   position: absolute;
-   background-image: url("/img/top-arrow-line.png");
-   background-repeat: no-repeat;
-   width: 452px;
-   height: 150px;
-   top: 43px;
-   left: 450px;
 
    content: "";
 }
