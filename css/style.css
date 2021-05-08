@@ -688,6 +688,7 @@ input:checked .accordion-title::after {
 }
 
 .location-text {
+   font-family: var(--secondary-font);
    margin-top: 0;
    margin-bottom: 0;
    margin-right: auto;
