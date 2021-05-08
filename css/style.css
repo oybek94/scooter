@@ -77,7 +77,6 @@ html {
 
 .nav-link {
    margin-right: 32px;
-   font-weight: 700;
    color: var(--text-color);
    text-decoration: none;
    transition: color .3s ease;
@@ -224,6 +223,9 @@ html {
 .service-title {
    margin-top: 0;
    margin-bottom: 27px;
+}
+
+.content-title {
    font-size: 24px;
    line-height: 28px;
    letter-spacing: -1.07143px;
@@ -277,6 +279,9 @@ html {
 .features-item__title {
    margin-top: 0;
    margin-bottom: 24px;
+}
+
+.section-title {
    font-size: 48px;
    line-height: 48px;
    letter-spacing: -2.14286px;
@@ -325,11 +330,10 @@ html {
 
 .appstore__title {
    max-width: 420px;
+   margin-top: 0;
+   margin-bottom: 0;
    margin-right: auto;
-   font-size: 48px;
-   line-height: 48px;
-   letter-spacing: -2.14286px;
-   color: var(--white-color);
+   color: var(--white-color)!important;
 }
 
 .appstore-link {
@@ -412,27 +416,14 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    margin-bottom: 120px;
 }
 
-.value__content {
-   justify-content: space-between;
-}
-
-.section-title {
-   margin: 0;
-   font-weight: bold;
-   font-size: 48px;
-   line-height: 48px;
-   text-align: center;
-   letter-spacing: -2.14286px;
-   color: var(--header-text-color);
-}
-
 .value__title {
+   margin-top: 0;
    margin-bottom: 48px;
+   text-align: center;
 }
 
 .value-list {
    display: flex;
-   justify-content: space-between;
    padding: 0;
    list-style: none;
 }
@@ -493,13 +484,8 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
 
 .value-item__title {
    margin-top: 0;
-   margin-bottom: 27px;
-   font-weight: bold;
-   font-size: 24px;
-   line-height: 28px;
+   margin-bottom: 27px;;
    text-align: center;
-   letter-spacing: -1.07143px;
-   color: var(--header-text-color);
 }
 
 .value-item__text {
@@ -519,6 +505,7 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
 
 .faq-title {
    margin-bottom: 64px;
+   text-align: center;
 }
 
 .faq-how__title {
@@ -558,10 +545,6 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    position: relative;
    display: block;
    cursor: pointer;
-   font-size: 24px;
-   line-height: 28px;
-   letter-spacing: -1.07143px;
-   color: var(--header-text-color);
 }
 
 .accordion-title::after {
@@ -641,10 +624,6 @@ input:checked .accordion-title::after {
 .apply-position {
    margin-top: 0;
    margin-bottom: 8px;
-   font-size: 24px;
-   line-height: 28px;
-   letter-spacing: -1.07143px;
-   color: var(--header-text-color);
 }
 
 .apply-country {
@@ -672,10 +651,6 @@ input:checked .accordion-title::after {
    margin-top: 0;
    margin-bottom: 0;
    margin-right: 76px;
-   font-size: 48px;
-   line-height: 48px;
-   letter-spacing: -2.14286px;
-   color: var(--header-text-color);
 }
 
 .location-text {
