@@ -355,6 +355,11 @@ html {
    background-color: #333A44;
 }
 
+.social {
+   display: flex;
+   align-items: center;
+}
+
 .social-link {
    display: inline-block;
    margin-left: 24px;
@@ -576,6 +581,7 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    background-image: url("/img/arrow-top.png");
    background-position: center center;
    content: "";
+   transition: transform .3s ease;
 }
 
 input:checked .accordion-title::after {
@@ -597,6 +603,10 @@ input:checked .accordion-title::after {
 .radio-btn:checked ~ .accordion-text {
    padding-top: 24px;
    height: auto;
+}
+
+.radio-btn:checked ~ .accordion-title::after {
+   transform: rotate(180deg);
 }
 
 .features-careers {
