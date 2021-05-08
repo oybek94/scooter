@@ -52,9 +52,12 @@ html {
 .content {
    display: flex;
    align-items: center;
-   height: 96px;
 }
 
+.header,
+.end {
+   padding: 22px 0;
+}
 .logo {
    margin-right: 38px;
 }
