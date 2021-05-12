@@ -66,10 +66,6 @@ html {
    margin-right: 20px;
 }
 
-.nav {
-   margin-right: auto;
-}
-
 .nav-list {
    display: flex;
    padding: 0;
@@ -104,6 +100,10 @@ html {
    color: var(--accent-color);
 }
 
+.header-btn {
+   margin-left: auto;
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -131,7 +131,7 @@ html {
    margin-top: 0;
    margin-bottom: 40px;
    margin-left: 96px;
-   width: 405px;
+   max-width: 405px;
    color: var(--white-color);
    font-family: var(--secondary-font);
 }
@@ -659,4 +659,82 @@ input:checked .accordion-title::after {
    margin-bottom: 0;
    margin-right: auto;
    width: 445px;
+}
+
+/* ADAPTIVE */
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .container {
+      padding-left: 97px;
+      padding-right: 98px;
+   }
+   .hero {
+      text-align: center;
+      padding: 137px 0 217px 0;
+      background-position: top calc(50% + 216px) left calc(50% + -285px), top calc(50% + 245px) right, 0 0, 0 0;
+   }
+
+   .hero-text {
+      max-width: 573px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+   }
+
+   .hero-text::before {
+      display: none;
+   }
+
+   .hero-btn {
+      margin-left: 0;
+   }
+
+   .main {
+      padding: 122px 0 104px 0;
+   }
+
+   .service {
+      margin-bottom: 145px;
+   }
+
+   .service-list {
+      flex-direction: column;
+      margin: 0;
+   }
+
+   .service-item {
+      display: flex;
+      margin-right: 0;
+   }
+
+   .service-item:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .service-icon {
+      display: table;
+      margin-right: 79px;
+   }
+
+   .service-icon::before {
+      width: 15px;
+      height: 130%;
+      top: -125px;
+      left: 42px;
+   }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
 }
