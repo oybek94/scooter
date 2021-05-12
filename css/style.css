@@ -669,6 +669,9 @@ input:checked .accordion-title::after {
       padding-left: 97px;
       padding-right: 98px;
    }
+
+   /* HERO SECTION */
+
    .hero {
       text-align: center;
       padding: 137px 0 217px 0;
@@ -692,6 +695,8 @@ input:checked .accordion-title::after {
    .main {
       padding: 122px 0 104px 0;
    }
+
+   /* SERVICE SECTION */
 
    .service {
       margin-bottom: 145px;
@@ -722,6 +727,51 @@ input:checked .accordion-title::after {
       top: -125px;
       left: 42px;
    }
+
+   /*FEATURE SECTION*/
+   
+   .features {
+      background-position: left calc(50% + 10px) top calc(50% + -946px), 
+                           right calc(50% + 410px) top calc(50% + -310px), 
+                           left calc(50% + 400px) top calc(50% + 700px), 
+                           
+                           left calc(50% + 500px) top calc(50% + -1100px), 
+                           right calc(50% + 500px) top calc(50% + -170px),  
+                           left calc(50% + 500px) top calc(50% + 760px);
+   }
+   .features-item {
+      flex-direction: column;
+      margin-bottom: 128px;
+   }
+   
+   .features-item:last-child {
+      margin-bottom: 0;
+   } 
+
+   .features-item__content {
+      order: 2;
+      max-width: 100%;
+      margin-right: 0;
+      text-align: center;
+   }
+
+   .features-item__title {
+      margin-bottom: 40px;
+   }
+
+   .features-item__text {
+      margin-bottom: 54px;
+   }
+
+   .features-item__photo {
+      margin-bottom: 56px;
+   }
+
+   .features-item:nth-child(even) {
+      flex-direction: column;
+   }
+
+   
 }
 
 /* Landscape phones and portrait tablets */
