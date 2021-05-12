@@ -662,10 +662,19 @@ input:checked .accordion-title::after {
    width: 445px;
 }
 
+
+
+
+
+
+
+
+
+
 /* ADAPTIVE */
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 991px) {
    .container {
       padding-left: 97px;
       padding-right: 98px;
