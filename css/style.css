@@ -838,6 +838,26 @@ input:checked .accordion-title::after {
       margin-right: 0;
       margin-bottom: 32px;
    }
+
+   /* LOCATION PAGE */ 
+   /* LOCATION CONTENT */
+
+   .location-content {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .location-title {
+      width: 457px;
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+
+   .location-text {
+      margin-right: 0;
+      margin-bottom: 40px;
+      text-align: center;
+   }
 }
 
 /* Landscape phones and portrait tablets */
