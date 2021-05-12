@@ -353,6 +353,7 @@ html {
 .social {
    display: flex;
    align-items: center;
+   margin-left: auto;
 }
 
 .social-link {
@@ -771,7 +772,25 @@ input:checked .accordion-title::after {
       flex-direction: column;
    }
 
-   
+   /*FOOTERE SECTION*/
+
+   .appstore {
+      padding: 62px 0;
+   }
+
+   .appstore .content {
+      flex-direction: column;
+   }
+
+   .section-title {
+      text-align: center;
+   }
+
+   .appstore__title {
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+
 }
 
 /* Landscape phones and portrait tablets */
