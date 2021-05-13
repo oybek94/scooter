@@ -54,10 +54,36 @@ html {
    align-items: center;
 }
 
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   background-color: var(--white-color);
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   opacity: 0.98;
+}
+
+.header::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100px;
+   height: 100%;
+   background-color: var(--white-color);
+}
+
 .header,
 .end {
    padding: 22px 0;
 }
+
+.header__burger {
+   display: none;
+}
+
 .logo {
    margin-right: 38px;
 }
@@ -107,6 +133,7 @@ html {
 /* HERO SECTION */
 
 .hero {
+   margin-top: 99px;
    padding: 152px 0;
    background-image: url("/img/top-arrow-line.png"), url("/img/rounds.png"), linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url("/img/bg-image.png");
    background-repeat: no-repeat;
@@ -870,9 +897,251 @@ input:checked .accordion-title::after {
    }
 }
 
+
+
+
+
+
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+   .container {
+      padding-left: 32px;
+      padding-right: 32px;
+   }
 
+   /* HEADER */
+
+   .header__burger {
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 16px;
+   }
+
+   .header__burger::before,
+   .header__burger::after {
+      content: '';
+      position: absolute;
+      background-color: var(--accent-color);
+      width: 100%;
+      height: 4px;
+      left: 0;
+   }
+
+   .header__burger::before {
+      top: 0;
+   }
+
+   .header__burger::after {
+      bottom: 0;
+   }
+
+   .header__burger-line {
+      position: absolute;
+      background-color: var(--accent-color);
+      width: 100%;
+      height: 4px;
+      top: 6px;
+   }
+
+   .header-btn,
+   .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--accent-color);
+   }
+
+   /* HERO SECTION */
+
+   .hero {
+      text-align: center;
+      padding: 137px 0 217px 0;
+      background-position: top calc(50% + 216px) left calc(50% + -285px), top calc(50% + 245px) right, 0 0, 0 0;
+   }
+
+   .hero-text {
+      max-width: 573px;
+      margin: 0 auto;
+      margin-bottom: 46px;
+   }
+
+   .hero-text::before {
+      display: none;
+   }
+
+   .hero-btn {
+      margin-left: 0;
+   }
+
+   .main {
+      padding: 122px 0 104px 0;
+   }
+
+   /* SERVICE SECTION */
+
+   .service {
+      margin-bottom: 145px;
+   }
+
+   .service-list {
+      flex-direction: column;
+      margin: 0;
+   }
+
+   .service-item {
+      display: flex;
+      margin-right: 0;
+   }
+
+   .service-item:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .service-icon {
+      display: table;
+      margin-right: 79px;
+   }
+
+   .service-icon::before {
+      width: 15px;
+      height: 130%;
+      top: -125px;
+      left: 42px;
+   }
+
+   /*FEATURE SECTION*/
+   
+   .features {
+      background-position: left calc(50% + 10px) top calc(50% + -946px), 
+                           right calc(50% + 410px) top calc(50% + -310px), 
+                           left calc(50% + 400px) top calc(50% + 700px), 
+                           
+                           left calc(50% + 500px) top calc(50% + -1100px), 
+                           right calc(50% + 500px) top calc(50% + -170px),  
+                           left calc(50% + 500px) top calc(50% + 760px);
+   }
+   .features-item {
+      flex-direction: column;
+      margin-bottom: 128px;
+   }
+   
+   .features-item:last-child {
+      margin-bottom: 0;
+   } 
+
+   .features-item__content {
+      order: 2;
+      max-width: 100%;
+      margin-right: 0;
+      text-align: center;
+   }
+
+   .features-item__title {
+      margin-bottom: 40px;
+   }
+
+   .features-item__text {
+      margin-bottom: 54px;
+   }
+
+   .features-item__photo {
+      margin-bottom: 56px;
+   }
+
+   .features-item:nth-child(even) {
+      flex-direction: column;
+   }
+
+   /*FOOTERE SECTION*/
+
+   .appstore {
+      padding: 62px 0;
+   }
+
+   .appstore .content {
+      flex-direction: column;
+   }
+
+   .section-title {
+      text-align: center;
+   }
+
+   .appstore__title {
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+
+
+   /* ABOUT SECTION */
+   /* FEATURE */
+
+   .features-about {
+      margin-bottom: 120px;
+      background-position: left calc(50% + 16px) top calc(50% + -445px), 
+                           right calc(50% + 412px) top calc(50% + 165px),
+      
+                           left calc(50% + 500px) top calc(50% + -550px), 
+                           right calc(50% + 500px) top calc(50% + 310px);
+   }
+
+   .value-list {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 58px;
+      padding-right: 58px;
+   }
+
+   .value-item {
+      width: 100%;
+   }
+
+   .value-item:not(:last-child) {
+      margin: 0;
+   }
+
+   /* FAQ */
+
+   .faq-how {
+      flex-direction: column;
+   }
+
+   .faq-how__title {
+      margin-right: 0;
+      margin-bottom: 32px;
+   }
+
+   /* LOCATION PAGE */ 
+   /* LOCATION CONTENT */
+
+   .location-content {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .location-title {
+      width: 457px;
+      margin-right: 0;
+      margin-bottom: 40px;
+   }
+
+   .location-text {
+      margin-right: 0;
+      margin-bottom: 40px;
+      text-align: center;
+   }
+
+   /* CAREER PAGE */
+   /* FEATURE SECTION */
+
+   .features-careers {
+      margin-bottom: 132px;
+      background-position: left calc(50% + 5px) top calc(50% + -15px), 
+                           
+                           left calc(50% + 500px) top calc(50% + -150px);
+   }
 }
 
 /* Portrait phones and smaller */
