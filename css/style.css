@@ -12,15 +12,15 @@
 
 html {
    box-sizing: border-box;
- }
- 
- *,
- *::after,
- *::before {
+}
+
+*,
+*::after,
+*::before {
    box-sizing: inherit;
- }
- 
- body {
+}
+
+body {
    margin: 0;
    padding: 0;
    max-width: 100%;
@@ -28,9 +28,9 @@ html {
    font-size: 15px;
    line-height: 167%;
    color: var(--text-color);
- }
+}
 
- .visually-hidden {
+.visually-hidden {
    position: absolute;
    width: 1px;
    height: 1px;
@@ -47,12 +47,12 @@ html {
    padding: 0 25px;
 }
 
-/* HEADER */
-
 .content {
    display: flex;
    align-items: center;
 }
+
+/* HEADER */
 
 .header {
    position: fixed;
@@ -70,7 +70,7 @@ html {
    position: absolute;
    top: 0;
    left: 0;
-   width: 100px;
+   width: 100%;
    height: 100%;
    background-color: var(--white-color);
 }
@@ -86,14 +86,18 @@ html {
 
 .logo {
    margin-right: 38px;
+   position: relative;
 }
 
 .nav {
+   display: flex;
+   width: 100%;
    margin-right: 20px;
 }
 
 .nav-list {
    display: flex;
+   position: relative;
    padding: 0;
 }
 
@@ -128,6 +132,7 @@ html {
 
 .header-btn {
    margin-left: auto;
+   position: relative;
 }
 
 /* HERO SECTION */
@@ -267,19 +272,19 @@ html {
 /* FEATURES */
 
 .features {
-   background-image: url("/img/arrow-right.png"), 
-                     url("/img/arrow-left.png"), 
-                     url("/img/arrow-right.png"), 
-                     url("/img/round.png"), 
-                     url("/img/round.png"), 
-                     url("/img/round.png");
+   background-image: url("/img/arrow-right.png"),
+      url("/img/arrow-left.png"),
+      url("/img/arrow-right.png"),
+      url("/img/round.png"),
+      url("/img/round.png"),
+      url("/img/round.png");
    background-repeat: no-repeat;
-   background-position: left calc(50% + 355px) top calc(50% + -463px), 
-                        right calc(50% + 750px) top calc(50% + -135px),
-                        left calc(50% + 750px) top calc(50% + 550px),
-                        left calc(50% + 840px) top calc(50% + -612px), 
-                        right calc(50% + 840px) top calc(50% + -2px),
-                        left calc(50% + 840px) top calc(50% + 607px);
+   background-position: left calc(50% + 355px) top calc(50% + -463px),
+      right calc(50% + 750px) top calc(50% + -135px),
+      left calc(50% + 750px) top calc(50% + 550px),
+      left calc(50% + 840px) top calc(50% + -612px),
+      right calc(50% + 840px) top calc(50% + -2px),
+      left calc(50% + 840px) top calc(50% + 607px);
 }
 
 .features-list {
@@ -360,7 +365,7 @@ html {
    margin-top: 0;
    margin-bottom: 0;
    margin-right: auto;
-   color: var(--white-color)!important;
+   color: var(--white-color) !important;
 }
 
 .appstore-link {
@@ -415,14 +420,14 @@ path {
 /* FEATURES ABOUT */
 
 .features-about {
-   background-image: url("/img/arrow-right-top.png"), 
-   url("/img/arrow-left.png"), 
-   url("/img/round.png"), 
-   url("/img/round.png");
-background-repeat: no-repeat;
-background-position: left calc(50% + 355px) top calc(50% + -200px), 
+   background-image: url("/img/arrow-right-top.png"),
+      url("/img/arrow-left.png"),
+      url("/img/round.png"),
+      url("/img/round.png");
+   background-repeat: no-repeat;
+   background-position: left calc(50% + 355px) top calc(50% + -200px),
       right calc(50% + 760px) top calc(50% + 157px),
-      left calc(50% + 840px) top calc(50% + -306px), 
+      left calc(50% + 840px) top calc(50% + -306px),
       right calc(50% + 840px) top calc(50% + 300px);
 }
 
@@ -495,7 +500,7 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
    background-color: var(--accent-color);
    border-radius: 50%;
 
-   content: "0" counter(counter);
+   content: "0"counter(counter);
 }
 
 .value-item__photo-tel {
@@ -512,7 +517,8 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
 
 .value-item__title {
    margin-top: 0;
-   margin-bottom: 27px;;
+   margin-bottom: 27px;
+   ;
    text-align: center;
 }
 
@@ -524,7 +530,7 @@ background-position: left calc(50% + 355px) top calc(50% + -200px),
 /* FAQs */
 
 .faq-how {
-   display: flex;  
+   display: flex;
 }
 
 .faq-how:not(:last-child) {
@@ -602,21 +608,21 @@ input:checked .accordion-title::after {
    color: var(--header-text-color);
 }
 
-.radio-btn:checked ~ .accordion-text {
+.radio-btn:checked~.accordion-text {
    padding-top: 24px;
    height: auto;
 }
 
-.radio-btn:checked ~ .accordion-title::after {
+.radio-btn:checked~.accordion-title::after {
    transform: rotate(180deg);
 }
 
 .features-careers {
-   background-image: url("/img/arrow-right.png"), 
-                     url("/img/round.png"); 
+   background-image: url("/img/arrow-right.png"),
+      url("/img/round.png");
    background-repeat: no-repeat;
-   background-position: left calc(50% + 355px) top calc(50% + 140px), 
-                        left calc(50% + 840px) top calc(50% + 1px);
+   background-position: left calc(50% + 355px) top calc(50% + 140px),
+      left calc(50% + 840px) top calc(50% + 1px);
 }
 
 .features-item__photo__boy-tablet {
@@ -675,7 +681,7 @@ input:checked .accordion-title::after {
 }
 
 .location-title {
-   width: 305px;  
+   width: 305px;
    margin-top: 0;
    margin-bottom: 0;
    margin-right: 76px;
@@ -766,24 +772,25 @@ input:checked .accordion-title::after {
    }
 
    /*FEATURE SECTION*/
-   
+
    .features {
-      background-position: left calc(50% + 10px) top calc(50% + -946px), 
-                           right calc(50% + 410px) top calc(50% + -310px), 
-                           left calc(50% + 400px) top calc(50% + 700px), 
-                           
-                           left calc(50% + 500px) top calc(50% + -1100px), 
-                           right calc(50% + 500px) top calc(50% + -170px),  
-                           left calc(50% + 500px) top calc(50% + 760px);
+      background-position: left calc(50% + 10px) top calc(50% + -946px),
+         right calc(50% + 410px) top calc(50% + -310px),
+         left calc(50% + 400px) top calc(50% + 700px),
+
+         left calc(50% + 500px) top calc(50% + -1100px),
+         right calc(50% + 500px) top calc(50% + -170px),
+         left calc(50% + 500px) top calc(50% + 760px);
    }
+
    .features-item {
       flex-direction: column;
       margin-bottom: 128px;
    }
-   
+
    .features-item:last-child {
       margin-bottom: 0;
-   } 
+   }
 
    .features-item__content {
       order: 2;
@@ -833,11 +840,11 @@ input:checked .accordion-title::after {
 
    .features-about {
       margin-bottom: 120px;
-      background-position: left calc(50% + 16px) top calc(50% + -445px), 
-                           right calc(50% + 412px) top calc(50% + 165px),
-      
-                           left calc(50% + 500px) top calc(50% + -550px), 
-                           right calc(50% + 500px) top calc(50% + 310px);
+      background-position: left calc(50% + 16px) top calc(50% + -445px),
+         right calc(50% + 412px) top calc(50% + 165px),
+
+         left calc(50% + 500px) top calc(50% + -550px),
+         right calc(50% + 500px) top calc(50% + 310px);
    }
 
    .value-list {
@@ -866,7 +873,7 @@ input:checked .accordion-title::after {
       margin-bottom: 32px;
    }
 
-   /* LOCATION PAGE */ 
+   /* LOCATION PAGE */
    /* LOCATION CONTENT */
 
    .location-content {
@@ -891,9 +898,9 @@ input:checked .accordion-title::after {
 
    .features-careers {
       margin-bottom: 132px;
-      background-position: left calc(50% + 5px) top calc(50% + -15px), 
-                           
-                           left calc(50% + 500px) top calc(50% + -150px);
+      background-position: left calc(50% + 5px) top calc(50% + -15px),
+
+         left calc(50% + 500px) top calc(50% + -150px);
    }
 }
 
@@ -904,6 +911,11 @@ input:checked .accordion-title::after {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+
+   .body.lock {
+      overflow: hidden;
+   }
+
    .container {
       padding-left: 32px;
       padding-right: 32px;
@@ -911,11 +923,21 @@ input:checked .accordion-title::after {
 
    /* HEADER */
 
+   .header {
+      padding: 10px 0;
+   }
+
+   .header::before {
+      z-index: 3;
+   }
+
    .header__burger {
       display: block;
       position: relative;
+      left: 32px;
       width: 20px;
       height: 16px;
+      z-index: 3;
    }
 
    .header__burger::before,
@@ -926,6 +948,7 @@ input:checked .accordion-title::after {
       width: 100%;
       height: 4px;
       left: 0;
+      transition: all .3s ease;
    }
 
    .header__burger::before {
@@ -942,17 +965,71 @@ input:checked .accordion-title::after {
       width: 100%;
       height: 4px;
       top: 6px;
+      transition: all .3s ease;
    }
 
-   .header-btn,
-   .nav-list {
+   .nav {
       position: fixed;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 82px;
+      padding-right: 32px;
+      padding-left: 32px;
+      padding-bottom: 32px;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: -100%;
+      width: 70%;
       height: 100%;
-      background-color: var(--accent-color);
+      background-color: #333A44;
+      transition: all .3s ease;
    }
+
+   .nav.active {
+      left: 0;
+   }
+
+   .nav-list {
+      flex-direction: column;
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   .nav-item {
+      margin-bottom: 24px;
+   }
+
+   .nav-link {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 24px;
+      color: var(--white-color);
+   }
+
+   .logo {
+      position: relative;
+      z-index: 3;
+   }
+
+   .header-btn {
+      z-index: 3;
+      margin-left: 0;
+      width: 100%;
+   }
+
+   .header__burger.active::before {
+      transform: rotate(45deg);
+      top: 6px;
+   }
+
+   .header__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 6px;
+   }
+
+   .header__burger.active .header__burger-line {
+      transform: scale(0);
+   }
+
 
    /* HERO SECTION */
 
@@ -1013,24 +1090,25 @@ input:checked .accordion-title::after {
    }
 
    /*FEATURE SECTION*/
-   
+
    .features {
-      background-position: left calc(50% + 10px) top calc(50% + -946px), 
-                           right calc(50% + 410px) top calc(50% + -310px), 
-                           left calc(50% + 400px) top calc(50% + 700px), 
-                           
-                           left calc(50% + 500px) top calc(50% + -1100px), 
-                           right calc(50% + 500px) top calc(50% + -170px),  
-                           left calc(50% + 500px) top calc(50% + 760px);
+      background-position: left calc(50% + 10px) top calc(50% + -946px),
+         right calc(50% + 410px) top calc(50% + -310px),
+         left calc(50% + 400px) top calc(50% + 700px),
+
+         left calc(50% + 500px) top calc(50% + -1100px),
+         right calc(50% + 500px) top calc(50% + -170px),
+         left calc(50% + 500px) top calc(50% + 760px);
    }
+
    .features-item {
       flex-direction: column;
       margin-bottom: 128px;
    }
-   
+
    .features-item:last-child {
       margin-bottom: 0;
-   } 
+   }
 
    .features-item__content {
       order: 2;
@@ -1080,11 +1158,11 @@ input:checked .accordion-title::after {
 
    .features-about {
       margin-bottom: 120px;
-      background-position: left calc(50% + 16px) top calc(50% + -445px), 
-                           right calc(50% + 412px) top calc(50% + 165px),
-      
-                           left calc(50% + 500px) top calc(50% + -550px), 
-                           right calc(50% + 500px) top calc(50% + 310px);
+      background-position: left calc(50% + 16px) top calc(50% + -445px),
+         right calc(50% + 412px) top calc(50% + 165px),
+
+         left calc(50% + 500px) top calc(50% + -550px),
+         right calc(50% + 500px) top calc(50% + 310px);
    }
 
    .value-list {
@@ -1113,7 +1191,7 @@ input:checked .accordion-title::after {
       margin-bottom: 32px;
    }
 
-   /* LOCATION PAGE */ 
+   /* LOCATION PAGE */
    /* LOCATION CONTENT */
 
    .location-content {
@@ -1138,18 +1216,14 @@ input:checked .accordion-title::after {
 
    .features-careers {
       margin-bottom: 132px;
-      background-position: left calc(50% + 5px) top calc(50% + -15px), 
-                           
-                           left calc(50% + 500px) top calc(50% + -150px);
+      background-position: left calc(50% + 5px) top calc(50% + -15px),
+
+         left calc(50% + 500px) top calc(50% + -150px);
    }
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
-
-}
+@media (max-width: 480px) {}
 
 /* Iphone 5 */
-@media (max-width: 320px) {
-
-}
+@media (max-width: 320px) {}
