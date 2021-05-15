@@ -971,10 +971,7 @@ input:checked .accordion-title::after {
       position: fixed;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 82px;
-      padding-right: 32px;
-      padding-left: 32px;
-      padding-bottom: 32px;
+      padding: 100px 32px 32px 32px;
       top: 0;
       left: -100%;
       width: 70%;
@@ -985,6 +982,10 @@ input:checked .accordion-title::after {
 
    .nav.active {
       left: 0;
+   }
+
+   .nav.active body {
+      overflow: hidden;
    }
 
    .nav-list {
@@ -1035,6 +1036,7 @@ input:checked .accordion-title::after {
    /* HERO SECTION */
 
    .hero {
+      margin-top: 0;
       text-align: center;
       padding: 137px 0 217px 0;
       background-position: top calc(50% + 216px) left calc(50% + -285px), top calc(50% + 245px) right, 0 0, 0 0;
@@ -1061,7 +1063,7 @@ input:checked .accordion-title::after {
    /* SERVICE SECTION */
 
    .service {
-      margin-bottom: 145px;
+      margin-bottom: 120px;
    }
 
    .service-list {
@@ -1070,41 +1072,45 @@ input:checked .accordion-title::after {
    }
 
    .service-item {
-      display: flex;
+      text-align: center;
+   }
+   
+   .service-item:not(:last-child) {
+      margin-bottom: 40px;
       margin-right: 0;
    }
 
-   .service-item:not(:last-child) {
-      margin-bottom: 40px;
-   }
-
    .service-icon {
-      display: table;
-      margin-right: 79px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 24px;
    }
 
    .service-icon::before {
-      width: 15px;
-      height: 130%;
-      top: -125px;
-      left: 42px;
+      width: 0;
+      height: 0;
    }
 
    /*FEATURE SECTION*/
 
    .features {
-      background-position: left calc(50% + 10px) top calc(50% + -946px),
-         right calc(50% + 410px) top calc(50% + -310px),
-         left calc(50% + 400px) top calc(50% + 700px),
+      background-position: left calc(50% + 214px) top calc(50% + -900px),
+         right calc(50% + 310px) top calc(50% + -135px),
+         left calc(50% + 320px) top calc(50% + 615px),
 
          left calc(50% + 500px) top calc(50% + -1100px),
          right calc(50% + 500px) top calc(50% + -170px),
          left calc(50% + 500px) top calc(50% + 760px);
    }
 
+   .features-list {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
    .features-item {
       flex-direction: column;
-      margin-bottom: 128px;
+      margin-bottom: 120px;
    }
 
    .features-item:last-child {
@@ -1127,6 +1133,14 @@ input:checked .accordion-title::after {
    }
 
    .features-item__photo {
+      margin-bottom: 0;
+      background-size: 311px;
+      background-position: center;
+   }
+
+   .features-item__photo__wallet {
+      width: 311px;
+      height: 311px;
       margin-bottom: 56px;
    }
 
@@ -1134,6 +1148,14 @@ input:checked .accordion-title::after {
       flex-direction: column;
    }
 
+   .section-title {
+      font-size: 32px;
+      line-height: 32px;   
+   }
+
+   .content-title {
+      font-size: 20px;
+   }
    /*FOOTERE SECTION*/
 
    .appstore {
@@ -1220,6 +1242,48 @@ input:checked .accordion-title::after {
       background-position: left calc(50% + 5px) top calc(50% + -15px),
 
          left calc(50% + 500px) top calc(50% + -150px);
+   }
+
+   /* FOOTER END */
+
+   .end {
+      padding: 64px 0 88px 0;
+   }
+
+   .end .content {
+      flex-direction: column;
+   }
+
+   .end .nav {
+      position: relative;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      margin-bottom: calc(85px - 16px);
+      text-align: center;
+   }
+
+   .end .nav-item {
+      margin-bottom: 16px;
+   }
+
+
+
+   .end .nav-link {
+      margin-right: 0;
+      color: var(--text-color);
+   }
+
+   .end .logo {
+      margin-bottom: 41px;
+   }
+
+   .social {
+      margin: 0 auto;
+   }
+
+   .social-link:first-child {
+      margin-left: 0;
    }
 }
 
