@@ -41,6 +41,11 @@ body {
    overflow: hidden;
 }
 
+img {
+   max-width: 100%;
+   height: auto;
+}
+
 .container {
    max-width: 1200px;
    margin: 0 auto;
@@ -326,25 +331,11 @@ body {
 }
 
 .features-item__photo {
-   width: 450px;
-   height: 450px;
-   background-repeat: no-repeat;
    z-index: -1;
 }
 
-.features-item__photo__girl {
-   background-image: url("/img/girl-with-tel.png");
-}
-
-.features-item__photo__city {
-   background-image: url("/img/city.png");
-}
-
-.features-item__photo__wallet {
-   background-image: url("/img/wallet.png");
+.features-item__photo-gallery {
    border-radius: 50%;
-   height: 445px;
-   width: 445px;
 }
 
 /* FOOTER */
@@ -406,6 +397,7 @@ path {
 
 .hero-mini {
    padding: 72px 0;
+   margin-top: 99px;
    background-repeat: no-repeat;
    background-size: auto, cover, cover;
    background-position: center right;
@@ -428,18 +420,6 @@ path {
       right calc(50% + 760px) top calc(50% + 157px),
       left calc(50% + 840px) top calc(50% + -306px),
       right calc(50% + 840px) top calc(50% + 300px);
-}
-
-.features-item__photo__girl-tel {
-   background-image: url("/img/girl-tel.png");
-   border-radius: 50%;
-   width: 445px;
-   height: 445px;
-}
-
-.features-item__photo__tramway {
-   background-image: url("/img/trolebus.png");
-   background-position: center center;
 }
 
 /* OUR VALUES */
@@ -626,9 +606,6 @@ input:checked .accordion-title::after {
 
 .features-item__photo__boy-tablet {
    background-image: url("/img/boy-tablet.png");
-   width: 445px;
-   height: 445px;
-   border-radius: 50%;
 }
 
 /* APPLY */
@@ -911,10 +888,6 @@ input:checked .accordion-title::after {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
-   .body.lock {
-      overflow: hidden;
-   }
-
    .container {
       padding-left: 32px;
       padding-right: 32px;
@@ -999,8 +972,8 @@ input:checked .accordion-title::after {
    }
 
    .nav-link {
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 25px;
+      line-height: 40px;
       margin-bottom: 24px;
       color: var(--white-color);
    }
@@ -1074,7 +1047,7 @@ input:checked .accordion-title::after {
    .service-item {
       text-align: center;
    }
-   
+
    .service-item:not(:last-child) {
       margin-bottom: 40px;
       margin-right: 0;
@@ -1098,9 +1071,9 @@ input:checked .accordion-title::after {
          right calc(50% + 310px) top calc(50% + -135px),
          left calc(50% + 320px) top calc(50% + 615px),
 
-         left calc(50% + 500px) top calc(50% + -1100px),
-         right calc(50% + 500px) top calc(50% + -170px),
-         left calc(50% + 500px) top calc(50% + 760px);
+         left -100%,
+         right -100%,
+         left -100%;
    }
 
    .features-list {
@@ -1134,13 +1107,12 @@ input:checked .accordion-title::after {
 
    .features-item__photo {
       margin-bottom: 0;
-      background-size: 311px;
+      max-width: 331px;
+      max-height: 331px;
       background-position: center;
    }
 
    .features-item__photo__wallet {
-      width: 311px;
-      height: 311px;
       margin-bottom: 56px;
    }
 
@@ -1150,12 +1122,13 @@ input:checked .accordion-title::after {
 
    .section-title {
       font-size: 32px;
-      line-height: 32px;   
+      line-height: 32px;
    }
 
    .content-title {
       font-size: 20px;
    }
+
    /*FOOTERE SECTION*/
 
    .appstore {
