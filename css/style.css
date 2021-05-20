@@ -1280,7 +1280,16 @@ input:checked .accordion-title::after {
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {}
+@media (max-width: 410px) {
+   .appstore-links {
+      text-align: center;
+   }
+
+   .appstore-link:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
 
 /* Iphone 5 */
 @media (max-width: 320px) {}
