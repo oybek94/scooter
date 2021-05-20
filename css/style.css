@@ -642,6 +642,9 @@ input:checked .accordion-title::after {
    color: var(--header-text-color);
 }
 
+.apply-btn {
+   margin-left: 20px;
+}
 
 /* LOCATION PAGE */
 
@@ -950,6 +953,7 @@ input:checked .accordion-title::after {
       width: 70%;
       height: 100%;
       background-color: #333A44;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       transition: all .3s ease;
    }
 
@@ -1066,7 +1070,8 @@ input:checked .accordion-title::after {
 
    /*FEATURE SECTION*/
 
-   .features {
+   .features,
+   .features-careers {
       background-image: none;
    }
 
@@ -1259,6 +1264,19 @@ input:checked .accordion-title::after {
       background-image: none;
    }
 
+   /* CAREER PAGE */
+
+   .apply-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 16px 32px 32px;
+   }
+
+   .apply-btn {
+      margin-left: 0;
+      margin-top: 16px;
+      width: 100%;
+   }
 
 }
 
