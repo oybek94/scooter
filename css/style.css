@@ -1097,9 +1097,13 @@ input:checked .accordion-title::after {
 
    /*FEATURE SECTION*/
 
-   .features,
-   .features-careers {
-      background-image: none;
+   .features {
+      background-position: left calc(50% + 209px) top calc(50% + -900px),
+      right calc(50% + 300px) top calc(50% + -215px),
+      left calc(50% + 320px) top calc(50% + 550px),
+      left calc(50% + 840px) top calc(50% + -612px),
+      right calc(50% + 840px) top calc(50% + -2px),
+      left calc(50% + 840px) top calc(50% + 607px);
    }
 
    .features-list {
@@ -1290,7 +1294,7 @@ input:checked .accordion-title::after {
    }
 
    .features-about {
-      background-image: none;
+      
    }
 
    /* CAREER PAGE */

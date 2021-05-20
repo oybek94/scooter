@@ -54,7 +54,11 @@
 
    <main class="main">
       <div class="container">
-         <img class="location-photo" src="/img/map.png" alt="map" width="1100" height="543">
+         <picture>
+            <source srcset="/img/map-mobile.png" type="image/png" media="(max-width:767px)">
+            <source srcset="/img/map.png" type="image/png" media="(min-width:768px)">
+            <img class="location-photo" src="/img/map.png" alt="map" width="1100" height="543">
+         </picture>
 
          <ul class="cities">
             <li class="city">
