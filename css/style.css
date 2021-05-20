@@ -1067,13 +1067,7 @@ input:checked .accordion-title::after {
    /*FEATURE SECTION*/
 
    .features {
-      background-position: left calc(50% + 214px) top calc(50% + -900px),
-         right calc(50% + 310px) top calc(50% + -135px),
-         left calc(50% + 320px) top calc(50% + 615px),
-
-         left -100%,
-         right -100%,
-         left -100%;
+      background-image: none;
    }
 
    .features-list {
@@ -1106,14 +1100,10 @@ input:checked .accordion-title::after {
    }
 
    .features-item__photo {
-      margin-bottom: 0;
+      margin-bottom: 56px;
       max-width: 331px;
       max-height: 331px;
       background-position: center;
-   }
-
-   .features-item__photo__wallet {
-      margin-bottom: 56px;
    }
 
    .features-item:nth-child(even) {
@@ -1258,6 +1248,18 @@ input:checked .accordion-title::after {
    .social-link:first-child {
       margin-left: 0;
    }
+
+   /* ABOUT PAGE */
+
+   .hero-mini {
+      margin-top: 56px;
+   }
+
+   .features-about {
+      background-image: none;
+   }
+
+
 }
 
 /* Portrait phones and smaller */
