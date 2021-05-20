@@ -660,7 +660,7 @@ input:checked .accordion-title::after {
 }
 
 .location-title {
-   width: 305px;
+   max-width: 305px;
    margin-top: 0;
    margin-bottom: 0;
    margin-right: 76px;
@@ -671,7 +671,7 @@ input:checked .accordion-title::after {
    margin-top: 0;
    margin-bottom: 0;
    margin-right: auto;
-   width: 445px;
+   max-width: 445px;
 }
 
 
@@ -861,7 +861,7 @@ input:checked .accordion-title::after {
    }
 
    .location-title {
-      width: 457px;
+      max-width: 457px;
       margin-right: 0;
       margin-bottom: 40px;
    }
@@ -953,7 +953,6 @@ input:checked .accordion-title::after {
       width: 70%;
       height: 100%;
       background-color: #333A44;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       transition: all .3s ease;
    }
 
