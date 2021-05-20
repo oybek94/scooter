@@ -648,6 +648,29 @@ input:checked .accordion-title::after {
 
 /* LOCATION PAGE */
 
+.cities {
+   display: none;
+   margin-top: 0;
+   margin-bottom: 72px;
+   padding-left: 0;
+}
+
+.city {
+   list-style: none;
+   padding: 22px 0;
+   background-color: rgba(252, 183, 43, 0.15);
+   text-align: center;
+   margin-bottom: 16px;
+}
+
+.city_name {
+   letter-spacing: 1.1px;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 28px;
+   color: #495567;
+}
+
 .location-photo {
    margin-bottom: 120px;
    width: 100%;
@@ -855,6 +878,10 @@ input:checked .accordion-title::after {
    /* LOCATION PAGE */
    /* LOCATION CONTENT */
 
+   .cities {
+      display: block;
+   }
+
    .location-content {
       flex-direction: column;
       align-items: center;
@@ -873,6 +900,7 @@ input:checked .accordion-title::after {
    }
 
    /* CAREER PAGE */
+
    /* FEATURE SECTION */
 
    .features-careers {
@@ -1184,6 +1212,10 @@ input:checked .accordion-title::after {
    /* LOCATION PAGE */
    /* LOCATION CONTENT */
 
+   .cities {
+      display: block;
+   }
+
    .location-content {
       flex-direction: column;
       align-items: center;
@@ -1233,8 +1265,6 @@ input:checked .accordion-title::after {
    .end .nav-item {
       margin-bottom: 16px;
    }
-
-
 
    .end .nav-link {
       margin-right: 0;
@@ -1290,6 +1320,3 @@ input:checked .accordion-title::after {
       margin-bottom: 10px;
   }
 }
-
-/* Iphone 5 */
-@media (max-width: 320px) {}
