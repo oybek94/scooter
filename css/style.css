@@ -57,6 +57,10 @@ img {
    align-items: center;
 }
 
+.lock {
+   overflow: hidden;
+}
+
 /* HEADER */
 
 .header {
@@ -1180,11 +1184,11 @@ input:checked .accordion-title::after {
 
    .features-about {
       margin-bottom: 120px;
-      background-position: left calc(50% + 16px) top calc(50% + -445px),
-         right calc(50% + 412px) top calc(50% + 165px),
+      background-position: left calc(50% + 200px) top calc(50% + -468px),
+                           right calc(50% + 200px) top calc(50% + 142px),
 
-         left calc(50% + 500px) top calc(50% + -550px),
-         right calc(50% + 500px) top calc(50% + 310px);
+                           left calc(50% + 500px) top calc(50% + -550px),
+                           right calc(50% + 500px) top calc(50% + 310px)
    }
 
    .value-list {
@@ -1242,9 +1246,9 @@ input:checked .accordion-title::after {
 
    .features-careers {
       margin-bottom: 132px;
-      background-position: left calc(50% + 5px) top calc(50% + -15px),
+      background-position: left calc(50% + 216px) top calc(50% + -81px),
 
-         left calc(50% + 500px) top calc(50% + -150px);
+                           left calc(50% + 500px) top calc(50% + -150px)
    }
 
    /* FOOTER END */
